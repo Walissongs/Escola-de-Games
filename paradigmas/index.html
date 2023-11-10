@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola de Games - UFJ</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="icon" href="/images/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/LOGO.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <a href="" class="logo"> Escola de Games - UFJ</a>
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="#home"><i class="uil uil-home"></i> Inicio</a>
+          <a href="#jogos"><i class="uil uil-compass"></i> Jogos</a>
+          <a href="#contato"><i class="uil uil-info-circle"></i> Contato</a>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="media-icons">
+      <a href="https://sites.google.com/ufj.edu.br/escoladegames/p%C3%A1gina-inicial?authuser=0" target="_blank"><i class="uil uil-location-arrow"></i></a>
+      <a href="https://instagram.com/escoladegamesufj?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="uil uil-instagram"></i></a>
+    </div>
+
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/bg1.gif" alt="">
+          <div class="text-content">
+            <h2 class="title">Missão e Objetivos</h2>
+            <p class="texto1"><span></span></p>
+            <button onclick="showSection()" class="read-btn">Ir para jogos <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="images/bg2.gif" alt="">
+          <div class="text-content">
+            <h2 class="title">Valores</h2>
+            <p class="texto2"></p>
+            <button onclick="showSection()" class="read-btn">Ir para jogos <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="images/bg3.gif" alt="">
+          <div class="text-content">
+            <h2 class="title">Visão</h2>
+            <p class="texto3"></p>
+            <button onclick="showSection()" class="read-btn">Ir para jogos <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bg4.gif" alt="">
+          <div class="text-content">
+            <h2 class="title">Jogos dos Nossos Alunos</h2>
+            <p class="texto4"></p>
+            <button onclick="showSection()" class="read-btn">Ir para jogos <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-slider-thumbs">
+      <div class="swiper-wrapper thumbs-container">
+        <img src="images/bg1.gif" class="swiper-slide" alt="">
+        <img src="images/bg2.gif" class="swiper-slide" alt="">
+        <img src="images/bg3.gif" class="swiper-slide" alt="">
+        <img src="images/bg4.gif" class="swiper-slide" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="box-sizing" id="jogos" style="display: none;">
+ 
+    <!-- Caixa para o jogo -->
+    <div class="box ">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="Game1" src="https://scratch.mit.edu/projects/708170610/embed"  allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <!-- Container para os botões -->
+  <div class="button-container">
+    <button onclick="goFullscreen('Game1')">Tela Cheia</button>
+    <button onclick="openPopup(this)">Abrir Jogo</button>
+    <button onclick="removeBlock(this)">Apagar</button>
+    <button onclick="reloadIframe(this)">Atualizar</button>
+
+  </div>
+    </div>
+
+      <!-- Caixa para o jogo -->
+      <div class="box">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <iframe id="Game2" src="https://scratch.mit.edu/projects/756465110/embed" allowtransparency="true"  frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <div class="button-container">
+          <button onclick="goFullscreen('Game2')">Tela Cheia</button>
+          <button onclick="openPopup(this)">Abrir Jogo</button>
+          <button onclick="removeBlock(this)">Apagar</button>
+          <button onclick="reloadIframe(this)">Atualizar</button>
+        </div>
+      </div>
+    <!-- Caixa para o jogo -->
+    <div class="box">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="Game3" src="https://scratch.mit.edu/projects/806555962/embed" allowtransparency="true"  frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <div class="button-container">
+        <button onclick="goFullscreen('Game3')">Tela Cheia</button>
+        <button onclick="openPopup(this)">Abrir Jogo</button>
+        <button onclick="removeBlock(this)">Apagar</button>
+        <button onclick="reloadIframe(this)">Atualizar</button>
+      </div>
+    </div>
+ 
+    <!-- Caixa para o jogo -->
+    <div class="box">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="Game4" src="https://scratch.mit.edu/projects/756466649/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <div class="button-container">
+        <button onclick="goFullscreen('Game4')">Tela Cheia</button>
+        <button onclick="openPopup(this)">Abrir Jogo</button>
+        <button onclick="removeBlock(this)">Apagar</button>
+        <button onclick="reloadIframe(this)">Atualizar</button>
+      </div>
+    </div>
+    
+    <!-- Caixa para o jogo -->
+    <div class="box">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="Game5" src="https://scratch.mit.edu/projects/784984384/embed"  allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <div class="button-container">
+        <button onclick="goFullscreen('Game5')">Tela Cheia</button>
+        <button onclick="openPopup('Game1')">Abrir Jogo</button>
+        <button onclick="removeBlock('Game1')">Apagar</button>
+        <button onclick="reloadIframe(this)">Atualizar</button>
+      </div>
+    </div>
+    <!-- Caixa para o jogo -->
+    <div class="box">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="Game6" src="https://scratch.mit.edu/projects/886245035/embed"  allowtransparency="true"  frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <div class="button-container">
+        <button onclick="goFullscreen('Game6')">Tela Cheia</button>
+        <button onclick="openPopup(this)">Abrir Jogo</button>
+        <button onclick="removeBlock(this)">Apagar</button>
+        <button onclick="reloadIframe(this)">Atualizar</button>
+      </div>
+    </div>
+
+    <div class="background"></div>
+    <div class="gradient"></div>
+
+
+    
+    </section>
+
+
+    <footer id="contato">
+      <div class="footer-content">
+        <div class="logo-container">
+          <a href="https://portalufj.jatai.ufg.br/" target="_blank"><img src="/images/ufjlogo.png" alt="Logo 1"></a>
+          <a href="https://computacao.jatai.ufg.br/" target="_blank"><img src="/images/LOGO_BCC.jpg" alt="Logo 2"></a>
+          <a href="https://sites.google.com/ufj.edu.br/escoladegames/p%C3%A1gina-inicial?authuser=0" target="_blank"><img src="/images/escoladegames-logo.png" alt="Logo 2"></a>
+        </div>
+        <div class="social-icons">
+          <a href="https://sites.google.com/ufj.edu.br/escoladegames/p%C3%A1gina-inicial?authuser=0" target="_blank"><i class="uil uil-location-arrow"></i></a>
+          <a href="https://instagram.com/escoladegamesufj?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="uil uil-instagram"></i></a>
+          
+        </div>
+      </div>
+      </footer>
+      
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+    </body>
+   
+  </html>
