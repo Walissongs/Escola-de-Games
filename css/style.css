@@ -617,6 +617,7 @@ iframe {
 
 .background {
   background-image:url('/images/loop-bg.png');
+  background-color: black;
   background-repeat: repeat-y;
   background-position: center top;
   background-size: cover;
