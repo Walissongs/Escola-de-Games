@@ -616,7 +616,7 @@ iframe {
 
 
 .background {
-  background-image:url('images/loop-bg.png');
+  background-image:url('/images/loop-bg.png');
   background-color: black;
   background-repeat: repeat-y;
   background-position: center top;
@@ -628,6 +628,11 @@ iframe {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@keyframes scroll {
+  from {background-position: center top;}
+  to {background-position: center bottom;}
 }
 
 .gradient {
@@ -650,10 +655,8 @@ iframe {
 }
 
 
-@keyframes scroll {
-  from {background-position: center top;}
-  to {background-position: center bottom;}
-}
+
+
 p span {
   color: #fbfafc;
   position: relative;
